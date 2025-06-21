@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyMainWindow</class>
+ <widget class="QMainWindow" name="MyMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyMainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>数据库</string>
+    </property>
+    <addaction name="action_connect_to_database"/>
+    <addaction name="action_disconnect_to_database"/>
+    <addaction name="action_update_data"/>
+    <addaction name="action_display_data"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>文件扫描</string>
+    </property>
+    <addaction name="action_select_scanning_location"/>
+    <addaction name="action_start_scanning"/>
+    <addaction name="action_end_scanning"/>
+    <addaction name="action_display_scanning_progress"/>
+    <addaction name="action_display_scanning_result"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_connect_to_database">
+   <property name="text">
+    <string>连接数据库</string>
+   </property>
+  </action>
+  <action name="action_disconnect_to_database">
+   <property name="text">
+    <string>断开连接</string>
+   </property>
+  </action>
+  <action name="action_update_data">
+   <property name="text">
+    <string>更改数据</string>
+   </property>
+  </action>
+  <action name="action_display_data">
+   <property name="text">
+    <string>显示数据</string>
+   </property>
+  </action>
+  <action name="action_select_scanning_location">
+   <property name="text">
+    <string>选择扫描位置</string>
+   </property>
+  </action>
+  <action name="action_start_scanning">
+   <property name="text">
+    <string>开始扫描</string>
+   </property>
+  </action>
+  <action name="action_end_scanning">
+   <property name="text">
+    <string>终止扫描</string>
+   </property>
+  </action>
+  <action name="action_display_scanning_progress">
+   <property name="text">
+    <string>显示扫描进度</string>
+   </property>
+  </action>
+  <action name="action_display_scanning_result">
+   <property name="text">
+    <string>显示扫描结果</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
